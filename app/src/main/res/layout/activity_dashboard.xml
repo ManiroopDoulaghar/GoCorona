@@ -21,13 +21,96 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_dashboard" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blackbackground">
 
-    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backgroundImage"
+                android:src="@drawable/backgroundimage"
+                android:scaleType="centerCrop"
+                android:alpha="0.6"/>
 
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/logoIcon"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/gocorona"
+                android:scaleType="centerCrop"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/innerRL"
+                android:layout_below="@id/logoIcon"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/infectCheck"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/infectcheck_bg"
+                    android:src="@drawable/infectcheck"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/hospitals"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/infectCheck"
+                    android:background="@drawable/hospitals_bg"
+                    android:src="@drawable/hospitals"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/facts"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/infectCheck"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/facts_bg"
+                    android:src="@drawable/facts"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:id="@+id/report"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/infectCheck"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/facts"
+                    android:background="@drawable/report_bg"
+                    android:src="@drawable/report"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/copyright"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_copyright_foreground"
+                android:drawablePadding="7dp"/>
+        </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

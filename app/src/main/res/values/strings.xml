@@ -9,10 +9,36 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="Home">Home</string>
     <string name="previous">Previous</string>
+    <string name="copyright"> Designed and Developed by Maniroop</string>
+    <string name="sign_out">Signout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hospital_actvity">HospitalActvity</string>
+    <string name="next">Next</string>
+    <string name="title_activity_report">ReportActivity</string>
+
+    <!--Report form Strings-->
+    <string name="reportTextView">Please fill the form and submit</string>
+    <string name="reportname">Full name </string>
+    <string name="reportMobileNumber">Mobile Number</string>
+    <!--Gender Slection-->
+
+    <string name="gender_prompt">Select Gender</string>
+
+    <string-array name="GenderSelection">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="possibleSymptoms">Please mention the symptoms</string>
+    <string name="checkBoxReport">Would you like to report your details to WorldOMeter?</string>
+    <string name="reportButton">Report</string>
+    <string name="title_activity_facts">FactsActivity</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="copyright"> Designed and Developed by Maniroop</string>
+
 </resources>

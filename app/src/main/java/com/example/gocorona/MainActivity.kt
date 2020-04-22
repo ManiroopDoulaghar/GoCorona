@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.tv_password
 import kotlinx.android.synthetic.main.activity_main.tv_username
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
-// This is a Login Activity
+// This is a Login Activity - The first Page
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun doLogin() {
+    public fun doLogin() {
         if (tv_username.text.toString().isEmpty()) {
             tv_username.error = "Please enter email"
             tv_username.requestFocus()
@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }
+
     fun updateUI(currentUser: FirebaseUser?) {
         if(currentUser!=null) {
             if (currentUser.isEmailVerified) {

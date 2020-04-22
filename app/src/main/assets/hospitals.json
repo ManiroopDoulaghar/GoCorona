@@ -1,0 +1,49 @@
+[{
+  "area": "ST.Louis",
+  "address": "\tBarnes-Jewish Hospital\\nOne Barnes-Jewish Hospital Plaza\\nSaint Louis, MO  63110"
+},
+  {
+    "area": "Lee's Summit",
+    "address": "Lee's Summit Medical Center\n2100 Southeast Blue Parkway\nLee's Summit, MO  64063"
+  },
+  {
+    "area": "Columbia",
+    "address": "University of Missouri Women's and Children's Hospital\n404 Keene Street\nColumbia, MO  65201"
+  },
+  {
+    "area": "Independence",
+    "address": "Centerpoint Medical Center\n19600 East 39th Street\nIndependence, MO  64057"
+  },
+  {
+    "area": "Jefferson City\t",
+    "address": "Capital Region Medical Center\n1125 Madison Street\nJefferson City, MO  65101"
+  },
+  {
+    "area": "Joplin",
+    "address": "Mercy Hospital Joplin\n100 Mercy Way\nJoplin, MO  64804"
+  },
+  {
+    "area": "Kansas City\t",
+    "address": "Saint Luke's North Hospital - Barry Road\n5830 Northwest Barry Road\nKansas City, MO  64154"
+  },
+  {
+    "area": "Warrensburg",
+    "address": "Western Missouri Medical Center\n403 Burkarth Road\nWarrensburg, MO  64093"
+  },
+  {
+    "area": "Kirksville",
+    "address": "\tOzarks Medical Center\n1100 Kentucky Avenue\nWest Plains, MO  65775"
+  },
+  {
+    "area": "Springfield",
+    "address": "Mercy Children's Hospital Springfield\n1235 East Cherokee Street\nSpringfield, MO  65804"
+  },
+  {
+    "area": "Sikeston",
+    "address": "Missouri Delta Medical Center\n1008 North Main Street\nSikeston, MO  63801"
+  },
+  {
+    "area": "O'Fallon",
+    "address": "Progress West Hospital\n2 Progress Point Parkway\nO'Fallon, MO  63368"
+  }
+]
