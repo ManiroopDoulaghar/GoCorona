@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
+/*This is report Activity*/
+/*Created by Doulaghar*/
+
 class ReportActivity : AppCompatActivity() {
 
     lateinit var editTextName : EditText
@@ -33,7 +36,8 @@ class ReportActivity : AppCompatActivity() {
         reportButton.setOnClickListener {
             saveData()
         }
-    }   //end onCreate
+    }   //End onCreate
+
     private fun saveData() {
         val Name = editTextName.text.toString().trim()
         val MobileNumber = editMobileNumber.text.toString().trim()
@@ -41,18 +45,22 @@ class ReportActivity : AppCompatActivity() {
         val Symptoms = editSymptoms.text.toString().trim()
         val CheckboxValue = checkbox.isChecked
 
-        try {
-            val ref = FirebaseDatabase.getInstance().getReference("Report")
-            val reportId = ref.push().key
-            val reportCase = Report(reportId, Name, MobileNumber,Gender ,Symptoms ,CheckboxValue)
-            if (reportId != null) {
-                ref.child(reportId).setValue(reportCase).addOnCompleteListener{
-                    Toast.makeText(applicationContext,"Report Saved Successfully",Toast.LENGTH_LONG).show()
-
+        if(Name!="" && MobileNumber!="" && Gender!="" && Symptoms!="") {
+            try {
+                val ref = FirebaseDatabase.getInstance().getReference("Report")
+                val reportId = ref.push().key
+                val reportCase = Report(reportId, Name, MobileNumber,Gender ,Symptoms ,CheckboxValue)
+                if (reportId != null) {
+                    ref.child(reportId).setValue(reportCase).addOnCompleteListener{
+                        Toast.makeText(applicationContext,"Report Saved Successfully",Toast.LENGTH_LONG).show()
+                    }
                 }
+            } catch (ex:Exception){
+                Log.d("LOOK HERE", ex.toString())
             }
-        } catch (ex:Exception){
-            Log.d("LOOK HERE", ex.toString())
         }
-    }   //end fun saveData()
-}   //end of Report Activity
+        else{
+            Toast.makeText(applicationContext,"Please Fill the form correctly.",Toast.LENGTH_LONG).show()
+        }   //End of if-Check
+    }   //End of function saveData()
+}   //End of class ReportActivity

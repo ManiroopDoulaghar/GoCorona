@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This is infect Check page-->
+<!--Created by Doulaghar -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#69F0AE"
+    tools:context=".InfectCheckFragment">
+
+    <TextView
+        android:id="@+id/SelectSymptoms"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="637dp"
+        android:text="@string/SelectSymptoms" />
+
+    <CheckBox
+        android:id="@+id/Sorethroat"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="582dp"
+        android:text="@string/Sorethroat" />
+
+    <CheckBox
+        android:id="@+id/Fever"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="516dp"
+        android:text="@string/Fever" />
+
+    <CheckBox
+        android:id="@+id/Runnynose"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="448dp"
+        android:text="@string/Runnynose" />
+
+    <CheckBox
+        android:id="@+id/Cough"
+        android:layout_width="162dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="375dp"
+        android:text="@string/Cough" />
+
+    <CheckBox
+        android:id="@+id/ShortOfBreath"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="309dp"
+        android:text="@string/ShortOfBreath" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="117dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="220dp"
+        android:text="Submit" />
+
+</RelativeLayout>

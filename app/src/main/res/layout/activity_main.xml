@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--This is login page xml-->
+<!--Created by Doulaghar-->
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -44,8 +45,7 @@
             android:textSize="18sp"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            />
+            android:textAllCaps="false" />
     </LinearLayout>
 
     <Button
@@ -59,6 +59,4 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         android:layout_alignParentBottom="true"/>
-
-
 </RelativeLayout>

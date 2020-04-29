@@ -2,13 +2,21 @@ package com.example.gocorona
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+
+/*This is Dashboard Activity*/
+/*Created by Doulaghar*/
 
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
+
+    var gcAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,5 +60,35 @@ class DashboardActivity : AppCompatActivity() {
 
         /*End of COVID-19 Module*/
 
-    }
-}
+        /*Start of Infect-Check Facts*/
+
+        //reference infectCheck ImageClick
+        val infectCheckImageView = findViewById<ImageView>(R.id.infectCheck)
+
+        //Image onClickListener
+        infectCheck.setOnClickListener {
+            val infectCheckIntent = Intent(this,InfectCheck::class.java)
+            startActivity(infectCheckIntent)
+        }
+        /*End of infectCheck Module*/
+
+        /*Start of Signout
+        * Note: This is not an activity*/
+
+        //reference the Sign out Button click
+        val btn_logout = findViewById<Button>(R.id.btn_LogOut)
+
+        //Button onClickListener
+        btn_logout.setOnClickListener {
+            gcAuth.signOut()
+        }
+        gcAuth.addAuthStateListener {
+            if (gcAuth.currentUser == null) {
+                this.finish()
+                val mainActivityIntent = Intent(this,MainActivity::class.java)
+                startActivity(mainActivityIntent)
+            }
+        }   //addAuthStateListener
+        /*End of Signout*/
+    }   //End onCreate
+}   //End of Dashboard Activity class

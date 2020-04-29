@@ -14,6 +14,9 @@ import kotlinx.android.synthetic.main.activity_sign_up.btn_sign_up
 import kotlinx.android.synthetic.main.activity_sign_up.tv_password
 import kotlinx.android.synthetic.main.activity_sign_up.tv_username
 
+/*This is SignUp Activity*/
+/*Created by Doulaghar*/
+
 class SignUpActivity : AppCompatActivity(){
 
     private lateinit var auth: FirebaseAuth
@@ -23,11 +26,13 @@ class SignUpActivity : AppCompatActivity(){
         setContentView(R.layout.activity_sign_up)
         auth = FirebaseAuth.getInstance()
 
+        /*Start of SignUp Activity*/
         btn_sign_up.setOnClickListener {
             signUpUser()
         }
+        /*End of SigUp Activity*/
+    }   //End onCreate
 
-    }
     private fun signUpUser() {
         if (tv_username.text.toString().isEmpty()) {
             tv_username.error = "Please enter email"
@@ -61,8 +66,6 @@ class SignUpActivity : AppCompatActivity(){
                                 val RegisterUser = Intent(this, MainActivity::class.java)
                                 startActivity(RegisterUser)
                                 finish()
-                                //startActivity(Intent(this,MainActivity::class.java))
-                                //finish()
                             }
                         }
                 } else {
@@ -71,7 +74,6 @@ class SignUpActivity : AppCompatActivity(){
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-            }
-    }
-
-}
+            }   //End of onCompleteListener
+    }   //End of function signUpUser()
+}   //End of class SignUpActivity

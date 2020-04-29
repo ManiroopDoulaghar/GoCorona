@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This is Dashboard Page-->
+<!--Created by Doulaghar-->
+
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -101,16 +104,20 @@
                     android:clickable="true"
                     android:focusable="true"/>
             </RelativeLayout>
-            <TextView
+
+            <Button
+                android:id="@+id/btn_LogOut"
                 android:layout_width="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:text="@string/copyright"
-                android:textColor="@color/colorWhite"
-                android:gravity="center"
-                android:layout_marginBottom="10dp"
-                android:drawableLeft="@drawable/ic_copyright_foreground"
-                android:drawablePadding="7dp"/>
+                android:layout_marginStart="299dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="648dp"
+                android:background="@color/red"
+                android:text="Logout" />
         </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,11 +1,14 @@
 <resources>
+
+    <!--Signup and Signin Page Strings-->
     <string name="app_name">GoCorona</string>
-    <string name="dont_have_account">Don\'t have account</string>
+    <string name="dont_have_account">Don\'t have account?</string>
     <string name="login">Login</string>
     <string name="sign_up">SignUp</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -26,6 +29,8 @@
     <string name="reportMobileNumber">Mobile Number</string>
     <!--Gender Slection-->
 
+    <string name="hospitalText">COVID-19 Hospitals</string>
+
     <string name="gender_prompt">Select Gender</string>
 
     <string-array name="GenderSelection">
@@ -40,5 +45,16 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_infect">InfectActivity</string>
+    <string name="title_activity_infect_check">InfectCheck</string>
 
+    <!--Questionare-->
+    <string name="SelectSymptoms">Please check the Symptoms from the following</string>
+    <string name="Sorethroat">Sorethroat</string>
+    <string name="Fever">Fever</string>
+    <string name="ShortOfBreath">Short Of Breath</string>
+    <string name="Runnynose">Runny Nose</string>
+    <string name="Cough">Cough</string>
+
+    <string name="resultText">Result </string>
 </resources>

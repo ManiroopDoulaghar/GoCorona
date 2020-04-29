@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.tv_username
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 // This is a Login Activity - The first Page
+/*Created by Doulaghar*/
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,18 +25,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         auth = FirebaseAuth.getInstance()
 
-
+        /*Start of Sign up Activity*/
         btn_sign_up.setOnClickListener {
             val SignupIntent = Intent(this,SignUpActivity::class.java)
             startActivity(SignupIntent)
             finish()
         }
+        /*End of Sign up Activity*/
 
+        /*Start of Login Activity*/
         btn_log_in.setOnClickListener {
             doLogin()
         }
-
-    }
+        /*End of Login Activity*/
+    }   //End onCreate
 
     public fun doLogin() {
         if (tv_username.text.toString().isEmpty()) {
@@ -64,14 +67,14 @@ class MainActivity : AppCompatActivity() {
                     updateUI(null)
                 }
             }
-    }
+    }   //end of function doLogin()
 
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
-        updateUI(currentUser)
-    }
+       // updateUI(currentUser)
+    }   //end of function onStart()
 
     fun updateUI(currentUser: FirebaseUser?) {
         if(currentUser!=null) {
@@ -87,5 +90,5 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(baseContext, "Login failed.",
                 Toast.LENGTH_SHORT).show()
         }
-    }
-}
+    }   //end of function updateUI
+}   //end of Class MainAcitivity
